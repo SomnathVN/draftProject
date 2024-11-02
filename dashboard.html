@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - EduPortal</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script defer src="dashboard.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>EduPortal</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Progress</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1>Welcome, Student!</h1>
+                <button id="toggleSidebar">☰</button>
+            </header>
+
+            <!-- Stats Section -->
+            <section class="stats">
+                <div class="card">
+                    <h3>Total Courses</h3>
+                    <p>5</p>
+                </div>
+                <div class="card">
+                    <h3>Courses Completed</h3>
+                    <p>2</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Assignments</h3>
+                    <p>3</p>
+                </div>
+                <div class="card">
+                    <h3>Messages</h3>
+                    <p>4 New</p>
+                </div>
+            </section>
+
+            <!-- Announcements Section -->
+            <section class="announcements">
+                <h2>Announcements</h2>
+                <ul>
+                    <li>🎉 New Web Development module available!</li>
+                    <li>⚠️ Cyber Security exam on Nov 10.</li>
+                    <li>📢 Don't miss the AI workshop this weekend!</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

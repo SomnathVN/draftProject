@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment - Computer Science Courses</title>
+    <link rel="stylesheet" href="enrollment.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Computer Science Enrollment</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <section class="enrollment-form">
+        <h2>Enroll in Computer Science Courses</h2>
+        <p>Please fill in the form below to enroll in your desired course.</p>
+
+        <form action="#" method="post" class="form-container">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+
+            <label for="courses">Select Course:</label>
+            <select id="courses" name="courses" required>
+                <option value="" disabled selected>Select a course</option>
+                <option value="web-development">Web Development</option>
+                <option value="data-science">Data Science</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="cyber-security">Cyber Security</option>
+            </select>
+
+            <label for="mode">Preferred Learning Mode:</label>
+            <div class="radio-group">
+                <input type="radio" id="online" name="mode" value="online" required>
+                <label for="online">Online</label>
+                <input type="radio" id="offline" name="mode" value="offline" required>
+                <label for="offline">Offline</label>
+            </div>
+
+            <label for="start-date">Preferred Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <label for="message">Additional Message (Optional):</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any specific preferences or questions?"></textarea>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+            </div>
+
+            <button type="submit">Enroll Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EduPortal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
